@@ -1,4 +1,5 @@
 packages:
+  - packages/agent37
   - packages/benchsdk-api
   - packages/benchsdk-worker
   - packages/benchsdk

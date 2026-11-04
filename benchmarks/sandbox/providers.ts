@@ -1,3 +1,4 @@
+import { agent37 } from '@computesdk/agent37';
 import { archil } from '@computesdk/archil';
 import { arker } from '@computesdk/arker';
 import { beam } from '@computesdk/beam';
@@ -49,6 +50,30 @@ import type { ProviderConfig } from './types.js';
  */
 export const providers: ProviderConfig[] = [
   // --- Direct mode (provider SDK packages) ---
+  // Agent37 runs three instance types on one API: the default sandbox,
+  // a VM (`type: 'vm'`) and a VM with cores held for it
+  // (`type: 'performance'`). Each is its own participant so boards rank them
+  // separately; they differ only in `type`.
+  {
+    name: 'agent37',
+    requiredEnvVars: ['AGENT37_API_KEY'],
+    createCompute: () => agent37({ apiKey: process.env.AGENT37_API_KEY! }),
+    sandboxOptions: { templateId: 'agent37-base' },
+  },
+  {
+    name: 'agent37-vm',
+    requiredEnvVars: ['AGENT37_API_KEY'],
+    createCompute: () => agent37({ apiKey: process.env.AGENT37_API_KEY! }),
+    sandboxOptions: { templateId: 'agent37-base', type: 'vm' },
+    manualOnly: true,
+  },
+  {
+    name: 'agent37-performance',
+    requiredEnvVars: ['AGENT37_API_KEY'],
+    createCompute: () => agent37({ apiKey: process.env.AGENT37_API_KEY! }),
+    sandboxOptions: { templateId: 'agent37-base', type: 'performance' },
+    manualOnly: true,
+  },
   {
     name: 'archil',
     // Execution mode is env-driven because this registry is shared with

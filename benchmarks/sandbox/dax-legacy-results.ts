@@ -71,11 +71,15 @@ export function recordsToDaxResults(participants: ParticipantRecords[]): DaxBenc
     const iterations = byTaskIndex(participant.records).map(recordToDaxTiming);
     const successful = iterations.filter((r) => !r.error);
     const withTiming = iterations.filter((r) => r.totalMs > 0 && (r.phasesCompleted ?? 0) > 0);
+    // With more than one iteration, a failed build's partial time must not pull
+    // the median down: summarize the successful builds whenever there is one.
+    // Identical to before for the weekly single-iteration run.
+    const timed = successful.length > 0 ? successful : withTiming;
     return {
       provider: participant.participant,
       mode: 'sandbox-dax' as const,
       iterations,
-      summary: withTiming.length > 0 ? summarize(withTiming) : emptySummary(),
+      summary: timed.length > 0 ? summarize(timed) : emptySummary(),
       successRate: iterations.length > 0 ? successful.length / iterations.length : 0,
     };
   });

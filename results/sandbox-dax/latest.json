@@ -1,10 +1,466 @@
 {
   "version": "1.0",
-  "timestamp": "2026-10-30T13:39:04.282Z",
+  "timestamp": "2026-11-03T12:45:41.556Z",
   "config": {
     "mode": "sandbox-dax"
   },
   "results": [
+    {
+      "provider": "agent37-performance",
+      "mode": "sandbox-dax",
+      "iterations": [
+        {
+          "totalMs": 60195,
+          "phasesCompleted": 6,
+          "phasesTotal": 7,
+          "prepareMs": 1640,
+          "cacheClearMs": 24,
+          "bunDownloadMs": 159,
+          "bunUnpackMs": 488,
+          "cloneMs": 2049,
+          "installMs": 11493,
+          "diskAfterClone": 352628736,
+          "diskAfterInstall": 3,
+          "commit": "08fb47373509ba64b13441061314eeacf4264f51",
+          "bunVersion": "1.3.14",
+          "nodeVersion": "v24.22.1",
+          "architecture": "x86_64",
+          "kernel": "Linux 7.0.0-38-generic",
+          "logicalCpus": "4",
+          "cpuModel": "Intel(R) Xeon(R) E-2386G CPU @ 3.50GHz",
+          "memoryKib": "16371856",
+          "error": "typecheck phase failed (exit code 1, 6/7 phases completed): $ bun turbo typecheck |  ERROR  opencode#typecheck: command (/tmp/opencode-provider-benchmark/repo/packages/opencode) /tmp/opencode-provider-benchmark/bun/bin/bun run typecheck exited (1) |  ERROR  run failed: command  exited (1) | error: \"turbo\" exited with code 1 | error: script \"typecheck\" exited with code 1 |   Time:    39.108s | Failed:    opencode#typecheck | | Provider | CPU / RAM | Region / CPU | Clone | Install | Typecheck | Workload total | Result | | |---|---|---|---:|---:|---:|---:|---| | | **agent37-performance** | 4 CPU / 15.61 GiB | unknown, Intel(R) Xeon(R) E-2386G CPU @ 3.50GHz | 2.049s | 11.493s | 39.188s (failed) | — | ❌ typecheck |"
+        },
+        {
+          "totalMs": 67882,
+          "phasesCompleted": 7,
+          "phasesTotal": 7,
+          "prepareMs": 1621,
+          "cacheClearMs": 28,
+          "bunDownloadMs": 294,
+          "bunUnpackMs": 488,
+          "cloneMs": 2236,
+          "installMs": 13159,
+          "typecheckMs": 45330,
+          "diskAfterClone": 352624640,
+          "diskAfterInstall": 3,
+          "diskAfterTypecheck": 3,
+          "commit": "08fb47373509ba64b13441061314eeacf4264f51",
+          "bunVersion": "1.3.14",
+          "nodeVersion": "v24.22.1",
+          "architecture": "x86_64",
+          "kernel": "Linux 7.0.0-38-generic",
+          "logicalCpus": "4",
+          "cpuModel": "Intel(R) Xeon(R) E-2386G CPU @ 3.50GHz",
+          "memoryKib": "16371860"
+        },
+        {
+          "totalMs": 59395,
+          "phasesCompleted": 6,
+          "phasesTotal": 7,
+          "prepareMs": 1622,
+          "cacheClearMs": 25,
+          "bunDownloadMs": 317,
+          "bunUnpackMs": 487,
+          "cloneMs": 2995,
+          "installMs": 12417,
+          "diskAfterClone": 352616448,
+          "diskAfterInstall": 3,
+          "commit": "08fb47373509ba64b13441061314eeacf4264f51",
+          "bunVersion": "1.3.14",
+          "nodeVersion": "v24.22.1",
+          "architecture": "x86_64",
+          "kernel": "Linux 7.0.0-38-generic",
+          "logicalCpus": "4",
+          "cpuModel": "Intel(R) Xeon(R) E-2386G CPU @ 3.50GHz",
+          "memoryKib": "16371860",
+          "error": "typecheck phase failed (exit code 1, 6/7 phases completed): $ bun turbo typecheck |  ERROR  @opencode-ai/cli#typecheck: command (/tmp/opencode-provider-benchmark/repo/packages/cli) /tmp/opencode-provider-benchmark/bun/bin/bun run typecheck exited (1) |  ERROR  run failed: command  exited (1) | error: \"turbo\" exited with code 1 | error: script \"typecheck\" exited with code 1 |   Time:    36.259s | Failed:    @opencode-ai/cli#typecheck | | Provider | CPU / RAM | Region / CPU | Clone | Install | Typecheck | Workload total | Result | | |---|---|---|---:|---:|---:|---:|---| | | **agent37-performance** | 4 CPU / 15.61 GiB | unknown, Intel(R) Xeon(R) E-2386G CPU @ 3.50GHz | 2.995s | 12.417s | 36.316s (failed) | — | ❌ typecheck |"
+        },
+        {
+          "totalMs": 66213,
+          "phasesCompleted": 7,
+          "phasesTotal": 7,
+          "prepareMs": 1655,
+          "cacheClearMs": 25,
+          "bunDownloadMs": 376,
+          "bunUnpackMs": 486,
+          "cloneMs": 2043,
+          "installMs": 11893,
+          "typecheckMs": 44771,
+          "diskAfterClone": 352628736,
+          "diskAfterInstall": 3,
+          "diskAfterTypecheck": 3,
+          "commit": "08fb47373509ba64b13441061314eeacf4264f51",
+          "bunVersion": "1.3.14",
+          "nodeVersion": "v24.22.1",
+          "architecture": "x86_64",
+          "kernel": "Linux 7.0.0-38-generic",
+          "logicalCpus": "4",
+          "cpuModel": "Intel(R) Xeon(R) E-2386G CPU @ 3.50GHz",
+          "memoryKib": "16371860"
+        },
+        {
+          "totalMs": 67142,
+          "phasesCompleted": 7,
+          "phasesTotal": 7,
+          "prepareMs": 1604,
+          "cacheClearMs": 24,
+          "bunDownloadMs": 314,
+          "bunUnpackMs": 487,
+          "cloneMs": 2198,
+          "installMs": 11630,
+          "typecheckMs": 46663,
+          "diskAfterClone": 352620544,
+          "diskAfterInstall": 3,
+          "diskAfterTypecheck": 3,
+          "commit": "08fb47373509ba64b13441061314eeacf4264f51",
+          "bunVersion": "1.3.14",
+          "nodeVersion": "v24.22.1",
+          "architecture": "x86_64",
+          "kernel": "Linux 7.0.0-38-generic",
+          "logicalCpus": "4",
+          "cpuModel": "Intel(R) Xeon(R) E-2386G CPU @ 3.50GHz",
+          "memoryKib": "16371856"
+        }
+      ],
+      "summary": {
+        "totalMs": {
+          "median": 67142,
+          "p95": 67882,
+          "p99": 67882
+        },
+        "prepareMs": {
+          "median": 1621,
+          "p95": 1655,
+          "p99": 1655
+        },
+        "bunDownloadMs": {
+          "median": 314,
+          "p95": 376,
+          "p99": 376
+        },
+        "bunUnpackMs": {
+          "median": 487,
+          "p95": 488,
+          "p99": 488
+        },
+        "cloneMs": {
+          "median": 2198,
+          "p95": 2236,
+          "p99": 2236
+        },
+        "installMs": {
+          "median": 11893,
+          "p95": 13159,
+          "p99": 13159
+        },
+        "typecheckMs": {
+          "median": 45330,
+          "p95": 46663,
+          "p99": 46663
+        }
+      },
+      "successRate": 0.6
+    },
+    {
+      "provider": "agent37",
+      "mode": "sandbox-dax",
+      "iterations": [
+        {
+          "totalMs": 158509,
+          "phasesCompleted": 7,
+          "phasesTotal": 7,
+          "prepareMs": 4621,
+          "cacheClearMs": 41,
+          "bunDownloadMs": 496,
+          "bunUnpackMs": 923,
+          "cloneMs": 4146,
+          "installMs": 21195,
+          "typecheckMs": 120425,
+          "diskAfterClone": 334894080,
+          "diskAfterInstall": 2,
+          "diskAfterTypecheck": 2,
+          "commit": "08fb47373509ba64b13441061314eeacf4264f51",
+          "bunVersion": "1.3.14",
+          "nodeVersion": "v24.22.1",
+          "architecture": "x86_64",
+          "kernel": "Linux 4.19.0-redacted",
+          "logicalCpus": "4",
+          "cpuModel": "unknown",
+          "memoryKib": "16777216"
+        },
+        {
+          "totalMs": 105904,
+          "phasesCompleted": 7,
+          "phasesTotal": 7,
+          "prepareMs": 2899,
+          "cacheClearMs": 31,
+          "bunDownloadMs": 293,
+          "bunUnpackMs": 566,
+          "cloneMs": 2091,
+          "installMs": 14826,
+          "typecheckMs": 80215,
+          "diskAfterClone": 334889984,
+          "diskAfterInstall": 2,
+          "diskAfterTypecheck": 2,
+          "commit": "08fb47373509ba64b13441061314eeacf4264f51",
+          "bunVersion": "1.3.14",
+          "nodeVersion": "v24.22.1",
+          "architecture": "x86_64",
+          "kernel": "Linux 4.19.0-redacted",
+          "logicalCpus": "4",
+          "cpuModel": "unknown",
+          "memoryKib": "16777216"
+        },
+        {
+          "totalMs": 0,
+          "error": "runCommand failed after 301511ms: fetch failed <- UND_ERR_HEADERS_TIMEOUT: Headers Timeout Error"
+        },
+        {
+          "totalMs": 132659,
+          "phasesCompleted": 7,
+          "phasesTotal": 7,
+          "prepareMs": 2938,
+          "cacheClearMs": 34,
+          "bunDownloadMs": 326,
+          "bunUnpackMs": 589,
+          "cloneMs": 3144,
+          "installMs": 17056,
+          "typecheckMs": 103262,
+          "diskAfterClone": 334884864,
+          "diskAfterInstall": 2,
+          "diskAfterTypecheck": 2,
+          "commit": "08fb47373509ba64b13441061314eeacf4264f51",
+          "bunVersion": "1.3.14",
+          "nodeVersion": "v24.22.1",
+          "architecture": "x86_64",
+          "kernel": "Linux 4.19.0-redacted",
+          "logicalCpus": "4",
+          "cpuModel": "unknown",
+          "memoryKib": "16777216"
+        },
+        {
+          "totalMs": 134325,
+          "phasesCompleted": 7,
+          "phasesTotal": 7,
+          "prepareMs": 2688,
+          "cacheClearMs": 31,
+          "bunDownloadMs": 388,
+          "bunUnpackMs": 762,
+          "cloneMs": 2723,
+          "installMs": 17388,
+          "typecheckMs": 104893,
+          "diskAfterClone": 334889984,
+          "diskAfterInstall": 2,
+          "diskAfterTypecheck": 2,
+          "commit": "08fb47373509ba64b13441061314eeacf4264f51",
+          "bunVersion": "1.3.14",
+          "nodeVersion": "v24.22.1",
+          "architecture": "x86_64",
+          "kernel": "Linux 4.19.0-redacted",
+          "logicalCpus": "4",
+          "cpuModel": "unknown",
+          "memoryKib": "16777216"
+        }
+      ],
+      "summary": {
+        "totalMs": {
+          "median": 133492,
+          "p95": 158509,
+          "p99": 158509
+        },
+        "prepareMs": {
+          "median": 2918.5,
+          "p95": 4621,
+          "p99": 4621
+        },
+        "bunDownloadMs": {
+          "median": 357,
+          "p95": 496,
+          "p99": 496
+        },
+        "bunUnpackMs": {
+          "median": 675.5,
+          "p95": 923,
+          "p99": 923
+        },
+        "cloneMs": {
+          "median": 2933.5,
+          "p95": 4146,
+          "p99": 4146
+        },
+        "installMs": {
+          "median": 17222,
+          "p95": 21195,
+          "p99": 21195
+        },
+        "typecheckMs": {
+          "median": 104077.5,
+          "p95": 120425,
+          "p99": 120425
+        }
+      },
+      "successRate": 0.8
+    },
+    {
+      "provider": "agent37-vm",
+      "mode": "sandbox-dax",
+      "iterations": [
+        {
+          "totalMs": 67526,
+          "phasesCompleted": 7,
+          "phasesTotal": 7,
+          "prepareMs": 1607,
+          "cacheClearMs": 25,
+          "bunDownloadMs": 137,
+          "bunUnpackMs": 487,
+          "cloneMs": 2010,
+          "installMs": 12596,
+          "typecheckMs": 45160,
+          "diskAfterClone": 352628736,
+          "diskAfterInstall": 3,
+          "diskAfterTypecheck": 3,
+          "commit": "08fb47373509ba64b13441061314eeacf4264f51",
+          "bunVersion": "1.3.14",
+          "nodeVersion": "v24.22.1",
+          "architecture": "x86_64",
+          "kernel": "Linux 7.0.0-38-generic",
+          "logicalCpus": "4",
+          "cpuModel": "Intel(R) Xeon(R) E-2386G CPU @ 3.50GHz",
+          "memoryKib": "16371856"
+        },
+        {
+          "totalMs": 67570,
+          "phasesCompleted": 7,
+          "phasesTotal": 7,
+          "prepareMs": 1624,
+          "cacheClearMs": 24,
+          "bunDownloadMs": 130,
+          "bunUnpackMs": 488,
+          "cloneMs": 1898,
+          "installMs": 12353,
+          "typecheckMs": 46339,
+          "diskAfterClone": 352624640,
+          "diskAfterInstall": 3,
+          "diskAfterTypecheck": 3,
+          "commit": "08fb47373509ba64b13441061314eeacf4264f51",
+          "bunVersion": "1.3.14",
+          "nodeVersion": "v24.22.1",
+          "architecture": "x86_64",
+          "kernel": "Linux 7.0.0-38-generic",
+          "logicalCpus": "4",
+          "cpuModel": "Intel(R) Xeon(R) E-2386G CPU @ 3.50GHz",
+          "memoryKib": "16371860"
+        },
+        {
+          "totalMs": 67667,
+          "phasesCompleted": 7,
+          "phasesTotal": 7,
+          "prepareMs": 1612,
+          "cacheClearMs": 24,
+          "bunDownloadMs": 159,
+          "bunUnpackMs": 489,
+          "cloneMs": 4061,
+          "installMs": 12187,
+          "typecheckMs": 44792,
+          "diskAfterClone": 352632832,
+          "diskAfterInstall": 3,
+          "diskAfterTypecheck": 3,
+          "commit": "08fb47373509ba64b13441061314eeacf4264f51",
+          "bunVersion": "1.3.14",
+          "nodeVersion": "v24.22.1",
+          "architecture": "x86_64",
+          "kernel": "Linux 7.0.0-38-generic",
+          "logicalCpus": "4",
+          "cpuModel": "Intel(R) Xeon(R) E-2386G CPU @ 3.50GHz",
+          "memoryKib": "16371856"
+        },
+        {
+          "totalMs": 66700,
+          "phasesCompleted": 7,
+          "phasesTotal": 7,
+          "prepareMs": 1623,
+          "cacheClearMs": 23,
+          "bunDownloadMs": 291,
+          "bunUnpackMs": 489,
+          "cloneMs": 1965,
+          "installMs": 11824,
+          "typecheckMs": 45680,
+          "diskAfterClone": 352628736,
+          "diskAfterInstall": 3,
+          "diskAfterTypecheck": 3,
+          "commit": "08fb47373509ba64b13441061314eeacf4264f51",
+          "bunVersion": "1.3.14",
+          "nodeVersion": "v24.22.1",
+          "architecture": "x86_64",
+          "kernel": "Linux 7.0.0-38-generic",
+          "logicalCpus": "4",
+          "cpuModel": "Intel(R) Xeon(R) E-2386G CPU @ 3.50GHz",
+          "memoryKib": "16371856"
+        },
+        {
+          "totalMs": 66494,
+          "phasesCompleted": 7,
+          "phasesTotal": 7,
+          "prepareMs": 1612,
+          "cacheClearMs": 25,
+          "bunDownloadMs": 137,
+          "bunUnpackMs": 484,
+          "cloneMs": 2278,
+          "installMs": 11331,
+          "typecheckMs": 46067,
+          "diskAfterClone": 352616448,
+          "diskAfterInstall": 3,
+          "diskAfterTypecheck": 3,
+          "commit": "08fb47373509ba64b13441061314eeacf4264f51",
+          "bunVersion": "1.3.14",
+          "nodeVersion": "v24.22.1",
+          "architecture": "x86_64",
+          "kernel": "Linux 7.0.0-38-generic",
+          "logicalCpus": "4",
+          "cpuModel": "Intel(R) Xeon(R) E-2386G CPU @ 3.50GHz",
+          "memoryKib": "16371860"
+        }
+      ],
+      "summary": {
+        "totalMs": {
+          "median": 67526,
+          "p95": 67667,
+          "p99": 67667
+        },
+        "prepareMs": {
+          "median": 1612,
+          "p95": 1624,
+          "p99": 1624
+        },
+        "bunDownloadMs": {
+          "median": 137,
+          "p95": 291,
+          "p99": 291
+        },
+        "bunUnpackMs": {
+          "median": 488,
+          "p95": 489,
+          "p99": 489
+        },
+        "cloneMs": {
+          "median": 2010,
+          "p95": 4061,
+          "p99": 4061
+        },
+        "installMs": {
+          "median": 12187,
+          "p95": 12596,
+          "p99": 12596
+        },
+        "typecheckMs": {
+          "median": 45680,
+          "p95": 46339,
+          "p99": 46339
+        }
+      },
+      "successRate": 1
+    },
     {
       "provider": "archil",
       "mode": "sandbox-dax",
@@ -143,7 +599,7 @@
           "bunVersion": "1.3.14",
           "nodeVersion": "v24.21.0",
           "architecture": "x86_64",
-          "kernel": "Linux 4.19.0-gvisor",
+          "kernel": "Linux 4.19.0-redacted",
           "logicalCpus": "64",
           "cpuModel": "unknown",
           "memoryKib": "16777216"
@@ -334,7 +790,7 @@
           "cacheClearMs": 45,
           "commit": "08fb47373509ba64b13441061314eeacf4264f51",
           "architecture": "x86_64",
-          "kernel": "Linux 4.19.0-gvisor",
+          "kernel": "Linux 4.19.0-redacted",
           "logicalCpus": "5",
           "cpuModel": "unknown",
           "memoryKib": "4007556",
@@ -1183,7 +1639,7 @@
           "bunVersion": "1.3.14",
           "nodeVersion": "v22.23.3",
           "architecture": "x86_64",
-          "kernel": "Linux 4.19.0-gvisor",
+          "kernel": "Linux 4.19.0-redacted",
           "logicalCpus": "4",
           "cpuModel": "unknown",
           "memoryKib": "344643628"
@@ -1680,7 +2136,7 @@
           "bunVersion": "1.3.14",
           "nodeVersion": "v24.22.1",
           "architecture": "x86_64",
-          "kernel": "Linux 4.19.0-gvisor",
+          "kernel": "Linux 4.19.0-redacted",
           "logicalCpus": "8",
           "cpuModel": "unknown",
           "memoryKib": "16777216"

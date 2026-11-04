@@ -126,6 +126,12 @@ export const config = defineBenchmarkConfig({
 // Note: lightning is sized via LIGHTNING_INSTANCE_TYPE=cpu-8 (8 vCPU / 16 GiB), applied on
 // the provider factory in providers.ts — the SDK ignores an instanceType passed to create().
 const DAX_RESOURCE_OPTIONS: Record<string, Record<string, any>> = {
+  // Agent37 caps every instance type at 4 vCPU, so its closest shape to the
+  // standardized 8 vCPU / 16 GiB profile is 4 vCPU / 16 GiB (half the cores).
+  // The provider rounds memoryMiB/diskMb up to whole GB.
+  agent37:               { cpu: 4, memoryMiB: 16384, diskMb: 20480 },
+  'agent37-vm':          { cpu: 4, memoryMiB: 16384, diskMb: 20480 },
+  'agent37-performance': { cpu: 4, memoryMiB: 16384, diskMb: 20480 },
   // archil maps vcpus -> vcpuCount, memoryMiB -> memSizeMiB on the VM create
   // (persistent mode only; ignored on the shared-disk exec path).
   archil:       { vcpus: 8, memoryMiB: 16384 },

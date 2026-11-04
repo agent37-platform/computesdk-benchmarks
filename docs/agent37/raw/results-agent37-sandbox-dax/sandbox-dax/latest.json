@@ -1,0 +1,157 @@
+{
+  "version": "1.0",
+  "timestamp": "2026-11-03T12:44:57.864Z",
+  "environment": {
+    "node": "v22.23.4",
+    "platform": "darwin",
+    "arch": "arm64"
+  },
+  "config": {
+    "mode": "sandbox-dax",
+    "timeoutMs": 600000,
+    "scriptSource": "local",
+    "scriptPath": "benchmarks/scripts/dax-benchmark.sh"
+  },
+  "results": [
+    {
+      "provider": "agent37",
+      "mode": "sandbox-dax",
+      "iterations": [
+        {
+          "totalMs": 158509,
+          "phasesCompleted": 7,
+          "phasesTotal": 7,
+          "prepareMs": 4621,
+          "cacheClearMs": 41,
+          "bunDownloadMs": 496,
+          "bunUnpackMs": 923,
+          "cloneMs": 4146,
+          "installMs": 21195,
+          "typecheckMs": 120425,
+          "diskAfterClone": 334894080,
+          "diskAfterInstall": 2,
+          "diskAfterTypecheck": 2,
+          "commit": "08fb47373509ba64b13441061314eeacf4264f51",
+          "bunVersion": "1.3.14",
+          "nodeVersion": "v24.22.1",
+          "architecture": "x86_64",
+          "kernel": "Linux 4.19.0-redacted",
+          "logicalCpus": "4",
+          "cpuModel": "unknown",
+          "memoryKib": "16777216"
+        },
+        {
+          "totalMs": 105904,
+          "phasesCompleted": 7,
+          "phasesTotal": 7,
+          "prepareMs": 2899,
+          "cacheClearMs": 31,
+          "bunDownloadMs": 293,
+          "bunUnpackMs": 566,
+          "cloneMs": 2091,
+          "installMs": 14826,
+          "typecheckMs": 80215,
+          "diskAfterClone": 334889984,
+          "diskAfterInstall": 2,
+          "diskAfterTypecheck": 2,
+          "commit": "08fb47373509ba64b13441061314eeacf4264f51",
+          "bunVersion": "1.3.14",
+          "nodeVersion": "v24.22.1",
+          "architecture": "x86_64",
+          "kernel": "Linux 4.19.0-redacted",
+          "logicalCpus": "4",
+          "cpuModel": "unknown",
+          "memoryKib": "16777216"
+        },
+        {
+          "totalMs": 0,
+          "error": "runCommand failed after 301511ms: fetch failed <- UND_ERR_HEADERS_TIMEOUT: Headers Timeout Error"
+        },
+        {
+          "totalMs": 132659,
+          "phasesCompleted": 7,
+          "phasesTotal": 7,
+          "prepareMs": 2938,
+          "cacheClearMs": 34,
+          "bunDownloadMs": 326,
+          "bunUnpackMs": 589,
+          "cloneMs": 3144,
+          "installMs": 17056,
+          "typecheckMs": 103262,
+          "diskAfterClone": 334884864,
+          "diskAfterInstall": 2,
+          "diskAfterTypecheck": 2,
+          "commit": "08fb47373509ba64b13441061314eeacf4264f51",
+          "bunVersion": "1.3.14",
+          "nodeVersion": "v24.22.1",
+          "architecture": "x86_64",
+          "kernel": "Linux 4.19.0-redacted",
+          "logicalCpus": "4",
+          "cpuModel": "unknown",
+          "memoryKib": "16777216"
+        },
+        {
+          "totalMs": 134325,
+          "phasesCompleted": 7,
+          "phasesTotal": 7,
+          "prepareMs": 2688,
+          "cacheClearMs": 31,
+          "bunDownloadMs": 388,
+          "bunUnpackMs": 762,
+          "cloneMs": 2723,
+          "installMs": 17388,
+          "typecheckMs": 104893,
+          "diskAfterClone": 334889984,
+          "diskAfterInstall": 2,
+          "diskAfterTypecheck": 2,
+          "commit": "08fb47373509ba64b13441061314eeacf4264f51",
+          "bunVersion": "1.3.14",
+          "nodeVersion": "v24.22.1",
+          "architecture": "x86_64",
+          "kernel": "Linux 4.19.0-redacted",
+          "logicalCpus": "4",
+          "cpuModel": "unknown",
+          "memoryKib": "16777216"
+        }
+      ],
+      "summary": {
+        "totalMs": {
+          "median": 133492,
+          "p95": 158509,
+          "p99": 158509
+        },
+        "prepareMs": {
+          "median": 2918.5,
+          "p95": 4621,
+          "p99": 4621
+        },
+        "bunDownloadMs": {
+          "median": 357,
+          "p95": 496,
+          "p99": 496
+        },
+        "bunUnpackMs": {
+          "median": 675.5,
+          "p95": 923,
+          "p99": 923
+        },
+        "cloneMs": {
+          "median": 2933.5,
+          "p95": 4146,
+          "p99": 4146
+        },
+        "installMs": {
+          "median": 17222,
+          "p95": 21195,
+          "p99": 21195
+        },
+        "typecheckMs": {
+          "median": 104077.5,
+          "p95": 120425,
+          "p99": 120425
+        }
+      },
+      "successRate": 0.8
+    }
+  ]
+}

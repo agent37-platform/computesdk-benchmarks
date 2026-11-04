@@ -1,0 +1,31 @@
+{
+  "name": "@computesdk/agent37",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Agent37 provider for ComputeSDK, vendored from computesdk/computesdk#1013 (branch add-agent37-provider, not yet on npm)",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup"
+  },
+  "dependencies": {
+    "@computesdk/provider": "^2.1.20"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  }
+}
